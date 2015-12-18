@@ -21,25 +21,24 @@ class __TwigTemplate_7c59d24649ee94357369ab14d40aaf1cab5cbb7acd074fc24d44e1bf44a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cae89618051ba9a45b1cf8421320aee069d103fd295e3c42133bcda3a3cf31ea = $this->env->getExtension("native_profiler");
-        $__internal_cae89618051ba9a45b1cf8421320aee069d103fd295e3c42133bcda3a3cf31ea->enter($__internal_cae89618051ba9a45b1cf8421320aee069d103fd295e3c42133bcda3a3cf31ea_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "ModulesUserBundle:Post:index.html.twig"));
+        $__internal_51c757b438fae88c921a54fdb9b74d30ac9868f74a4964d560614c26883ef0f5 = $this->env->getExtension("native_profiler");
+        $__internal_51c757b438fae88c921a54fdb9b74d30ac9868f74a4964d560614c26883ef0f5->enter($__internal_51c757b438fae88c921a54fdb9b74d30ac9868f74a4964d560614c26883ef0f5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "ModulesUserBundle:Post:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_cae89618051ba9a45b1cf8421320aee069d103fd295e3c42133bcda3a3cf31ea->leave($__internal_cae89618051ba9a45b1cf8421320aee069d103fd295e3c42133bcda3a3cf31ea_prof);
+        $__internal_51c757b438fae88c921a54fdb9b74d30ac9868f74a4964d560614c26883ef0f5->leave($__internal_51c757b438fae88c921a54fdb9b74d30ac9868f74a4964d560614c26883ef0f5_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_a239b5ccc645b9dd89392bf916f12f5ff91cf3289423ac38328f6ac4af50732e = $this->env->getExtension("native_profiler");
-        $__internal_a239b5ccc645b9dd89392bf916f12f5ff91cf3289423ac38328f6ac4af50732e->enter($__internal_a239b5ccc645b9dd89392bf916f12f5ff91cf3289423ac38328f6ac4af50732e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4da3a15e31e13bc6c7a2711f0964bba1381c9fc3ee1e83fcb236ec17cfdaa658 = $this->env->getExtension("native_profiler");
+        $__internal_4da3a15e31e13bc6c7a2711f0964bba1381c9fc3ee1e83fcb236ec17cfdaa658->enter($__internal_4da3a15e31e13bc6c7a2711f0964bba1381c9fc3ee1e83fcb236ec17cfdaa658_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<h1>Post list</h1>
 
-    <table class=\"records_list\">
         <thead>
             <tr>
                 <th>Id</th>
@@ -54,42 +53,42 @@ class __TwigTemplate_7c59d24649ee94357369ab14d40aaf1cab5cbb7acd074fc24d44e1bf44a
         </thead>
         <tbody>
         ";
-        // line 20
+        // line 19
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["entities"]) ? $context["entities"] : $this->getContext($context, "entities")));
         foreach ($context['_seq'] as $context["_key"] => $context["entity"]) {
-            // line 21
+            // line 20
             echo "            <tr>
                 <td><a href=\"";
-            // line 22
+            // line 21
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("_show", array("id" => twig_template_get_attributes($this, $context["entity"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, twig_template_get_attributes($this, $context["entity"], "id", array()), "html", null, true);
             echo "</a></td>
                 <td>";
-            // line 23
+            // line 22
             echo twig_escape_filter($this->env, twig_template_get_attributes($this, $context["entity"], "name", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 24
+            // line 23
             echo twig_escape_filter($this->env, twig_template_get_attributes($this, $context["entity"], "dni", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 25
+            // line 24
             echo twig_escape_filter($this->env, twig_template_get_attributes($this, $context["entity"], "age", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 26
+            // line 25
             echo twig_escape_filter($this->env, twig_template_get_attributes($this, $context["entity"], "active", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 27
+            // line 26
             if (twig_template_get_attributes($this, $context["entity"], "created", array())) {
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_template_get_attributes($this, $context["entity"], "created", array()), "Y-m-d H:i:s"), "html", null, true);
             }
             echo "</td>
                 <td>";
-            // line 28
+            // line 27
             if (twig_template_get_attributes($this, $context["entity"], "updated", array())) {
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_template_get_attributes($this, $context["entity"], "updated", array()), "Y-m-d H:i:s"), "html", null, true);
             }
@@ -97,14 +96,14 @@ class __TwigTemplate_7c59d24649ee94357369ab14d40aaf1cab5cbb7acd074fc24d44e1bf44a
                 <td>
                 <ul>
                     <li>
-                        <a href=\"";
-            // line 32
+                        <a type=\"button\" class=\"btn btn-info btn-xs\" href=\"";
+            // line 31
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("_show", array("id" => twig_template_get_attributes($this, $context["entity"], "id", array()))), "html", null, true);
             echo "\">show</a>
                     </li>
                     <li>
-                        <a href=\"";
-            // line 35
+                        <a type=\"button\" class=\"btn btn-warning btn-xs\" href=\"";
+            // line 34
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("_edit", array("id" => twig_template_get_attributes($this, $context["entity"], "id", array()))), "html", null, true);
             echo "\">edit</a>
                     </li>
@@ -116,23 +115,21 @@ class __TwigTemplate_7c59d24649ee94357369ab14d40aaf1cab5cbb7acd074fc24d44e1bf44a
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entity'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 41
+        // line 40
         echo "        </tbody>
-    </table>
 
         <ul>
-        <li>
-            <a href=\"";
-        // line 46
+            <li>
+                <a type=\"button\" href=\"";
+        // line 44
         echo $this->env->getExtension('routing')->getPath("_new");
-        echo "\">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
+        echo "\" class=\"btn btn-success\">Create a new entry</a>
+                
+            </li>
+        </ul>
     ";
         
-        $__internal_a239b5ccc645b9dd89392bf916f12f5ff91cf3289423ac38328f6ac4af50732e->leave($__internal_a239b5ccc645b9dd89392bf916f12f5ff91cf3289423ac38328f6ac4af50732e_prof);
+        $__internal_4da3a15e31e13bc6c7a2711f0964bba1381c9fc3ee1e83fcb236ec17cfdaa658->leave($__internal_4da3a15e31e13bc6c7a2711f0964bba1381c9fc3ee1e83fcb236ec17cfdaa658_prof);
 
     }
 
@@ -148,6 +145,6 @@ class __TwigTemplate_7c59d24649ee94357369ab14d40aaf1cab5cbb7acd074fc24d44e1bf44a
 
     public function getDebugInfo()
     {
-        return array (  127 => 46,  120 => 41,  108 => 35,  102 => 32,  93 => 28,  87 => 27,  83 => 26,  79 => 25,  75 => 24,  71 => 23,  65 => 22,  62 => 21,  58 => 20,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  125 => 44,  119 => 40,  107 => 34,  101 => 31,  92 => 27,  86 => 26,  82 => 25,  78 => 24,  74 => 23,  70 => 22,  64 => 21,  61 => 20,  57 => 19,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
